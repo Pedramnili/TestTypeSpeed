@@ -38,17 +38,11 @@ function update() {
   updateAccuracy();
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> Alireza
 function updateCharactersStatus() {
   // TODO: Complete this function
 }
 
 function updateAccuracy() {
-<<<<<<< HEAD
   // TODO: Complete this function
 }
 
@@ -57,8 +51,6 @@ function updateErrors() {
 }
 
 function updateWpm() {
-  // TODO: Complete this function
-=======
 const accuracy = ((typedCharacter - errors) / (typedCharacter)) * 100;
 const rounding = Math.round(accuracy);
 return rounding;
@@ -71,7 +63,6 @@ function updateWpm() {
   const wpm =((typedCharacter / 5) / timeElapsed) * 60;
   const round = Math.round(wpm);
   return round;
->>>>>>> Alireza
 }
 
 function updateTimer() {
