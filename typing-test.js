@@ -24,7 +24,13 @@ initializeTest({ timeLimit: TIME_LIMIT, text: TEXT });
 textArea.addEventListener("input", update);
 
 function initializeTest({ timeLimit, text }) {
-  // TODO: Complete this function
+    for (x in text){
+    let span = document.createElement("span")
+    MyText = document.createTextNode(text[x]);
+    span.appendChild(MyText);
+    typeText.appendChild(span);
+  }
+  timerText.innerHTML=timeLimit;
 }
 
 function update() {
@@ -51,7 +57,8 @@ function updateErrors() {
 }
 
 function updateWpm() {
-  // TODO: Complete this function
+    wpmText=((typedCharacter/5)/timeElapsed)*60;
+  wpmText=wpmText.round;
 }
 
 function updateTimer() {
