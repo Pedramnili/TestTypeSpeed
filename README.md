@@ -1,2 +1,0 @@
-# TestTypeSpeed
-Test Type Speed 
