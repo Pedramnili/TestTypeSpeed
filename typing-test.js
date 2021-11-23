@@ -38,6 +38,8 @@ function update() {
   updateAccuracy();
 }
 
+
+
 function updateCharactersStatus() {
   // TODO: Complete this function
 }
