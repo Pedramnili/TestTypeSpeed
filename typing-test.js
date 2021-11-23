@@ -62,6 +62,7 @@ function updateWpm() {
   const round = Math.round(wpm);
   return round;
 }
+//salam
 
 function updateTimer() {
   // TODO: Complete this function
