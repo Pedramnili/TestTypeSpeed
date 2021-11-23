@@ -25,13 +25,6 @@ textArea.addEventListener("input", update);
 
 function initializeTest({ timeLimit, text }) {
   // TODO: Complete this function
-  for (x in text){
-    let span = document.createElement("span")
-    MyText = document.createTextNode(text[x]);
-    span.appendChild(MyText);
-    typeText.appendChild(span);
-  }
-  timerText.innerHTML=TIME_LIMIT;
 }
 
 function update() {
@@ -45,20 +38,25 @@ function update() {
   updateAccuracy();
 }
 
+
+
 function updateCharactersStatus() {
   // TODO: Complete this function
 }
 
 function updateAccuracy() {
-  // TODO: Complete this function
+const accuracy = ((typedCharacter - errors) / (typedCharacter)) * 100;
+const rounding = Math.round(accuracy);
+return rounding;
 }
 
 function updateErrors() {
-  // TODO: Complete this function
 }
 
 function updateWpm() {
-  // TODO: Complete this function
+  const wpm =((typedCharacter / 5) / timeElapsed) * 60;
+  const round = Math.round(wpm);
+  return round;
 }
 
 function updateTimer() {
