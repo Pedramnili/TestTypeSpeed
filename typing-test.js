@@ -51,7 +51,9 @@ function updateErrors() {
 }
 
 function updateWpm() {
-  // TODO: Complete this function
+  const wpm =((typedCharacter / 5) / timeElapsed) * 60;
+  const round = Math.round(wpm);
+  return round;
 }
 
 function updateTimer() {
