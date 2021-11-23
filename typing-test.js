@@ -43,11 +43,12 @@ function updateCharactersStatus() {
 }
 
 function updateAccuracy() {
-  // TODO: Complete this function
+const accuracy = ((typedCharacter - errors) / (typedCharacter)) * 100;
+const rounding = Math.round(accuracy);
+return rounding;
 }
 
 function updateErrors() {
-  // TODO: Complete this function
 }
 
 function updateWpm() {
