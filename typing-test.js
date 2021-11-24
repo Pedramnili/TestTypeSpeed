@@ -55,6 +55,7 @@ function updateAccuracy() {
 }
 
 function updateErrors() {
+  // TODO: Complete this function
 }
 
 function updateWpm() {
@@ -64,9 +65,9 @@ function updateWpm() {
 }
 
 function updateTimer() {
-    timerText.value === '0' ? (clearTimeout(thisFunction)) && (textArea.disabled = true) : false;
+    // TODO: Complete this function
 }
 
 function finishTest() {
-    // TODO: Complete this function
+  timerText.value === '0' ? (clearTimeout(thisFunction)) && (textArea.disabled = true) : false;
 }
