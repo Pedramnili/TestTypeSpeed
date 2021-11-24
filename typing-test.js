@@ -23,8 +23,15 @@ initializeTest({timeLimit: TIME_LIMIT, text: TEXT});
 
 textArea.addEventListener("input", update);
 
+function initializeTest({timeLimit, text}) {
+    for (x in text) {
+        let span = document.createElement("span")
+        MyText = document.createTextNode(text[x]);
+        span.appendChild(MyText);
+        typeText.appendChild(span);
+    }
+    timerText.innerHTML = TIME_LIMIT;
 }
-  
 
 function update() {
     if (!hasStarted) {
@@ -52,13 +59,15 @@ function updateErrors() {
 }
 
 function updateWpm() {
-
+    const wpm = ((typedCharacter / 5) / timeElapsed) * 60;
+    const round = Math.round(wpm);
+    return round;
 }
 
 function updateTimer() {
-    // TODO: Complete this function
+    timerText.value === '0' ? (clearTimeout(thisFunction)) && (textArea.disabled = true) : false;
 }
 
 function finishTest() {
-  timerText.value === '0' ? (clearTimeout(thisFunction)) && (textArea.disabled = true) : false;
+    // TODO: Complete this function
 }
