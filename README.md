@@ -8,7 +8,8 @@ Free site for example type test site
 
 it's awesome ⌨ 👊 🏆
 
-thanks for Ali & Alireza & MohammadAmin & Pouya
+Thanks for 
+**Ali & Alireza & MohammadAmin & Pouya**
 
 ---
 
